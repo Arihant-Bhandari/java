@@ -1,17 +1,22 @@
 INTENT: Contains my programs made during my journey in learning Java.
+
 ------------------------------------------------------------------------
 PROJECT TITLE: Experimental log
+
 ------------------------------------------------------------------------
 PURPOSE OF PROJECT: recording all programs made using Java.
 
 VERSION or DATE: 2023(1.0.0)
+
 ------------------------------------------------------------------------
 HOW TO START THIS PROJECT:
 
 The project includes all programs written in Java, starting from basic concepts like handling operators and data types, as well as iterative mechanisms.
 It goes all the way to advanced topics, including but not limited to various algorithms and data structures.
+
 ------------------------------------------------------------------------
 AUTHORS: Arihant Bhandari
+
 ------------------------------------------------------------------------
 USER INSTRUCTIONS:
 
