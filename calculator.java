@@ -17,42 +17,42 @@ public class calculator
         {
             return result;   
         }
+        int n = 0;
+        if(s.equals("/") || s.equals("*") || s.equals("-") || s.equals("+") || s.equals("%"))
+        {
+            System.out.println("enter value:");
         
-        System.out.println("enter value:");
-        
-        int n = sc.nextInt();
-        
+            n = sc.nextInt();
+        }
         switch(s)
             {
                 case "+":
                     result = result + n;
-                    System.out.println("enter function:");
+                    System.out.println("enter from within these functions: *,/,-,+,%,^,root");
                     return arith_calc(sc.next());
                 case "-":
                     result = result - n;
-                    System.out.println("enter function:");
+                    System.out.println("enter from within these functions: *,/,-,+,%,^,root");
                     return arith_calc(sc.next());
                 case "*":
                     result = result * n;
-                    System.out.println("enter function:");
+                    System.out.println("enter from within these functions: *,/,-,+,%,^,root");
                     return arith_calc(sc.next());
                 case "/":
                     result = result / n;
-                    System.out.println("enter function:");
+                    System.out.println("enter from within these functions: *,/,-,+,%,^,root");
                     return arith_calc(sc.next());
                 case "%":
                     result = result % n;
-                    System.out.println("enter function:");
+                    System.out.println("enter from within these functions: *,/,-,+,%,^,root");
                     return arith_calc(sc.next());
                 case "^":
                     System.out.println("enter exponent.");
-                    Math.pow(n,sc.nextInt());
-                    System.out.println("enter function:");
-                    return arith_calc(sc.next());
+                    result = Math.pow(result,sc.nextInt());
+                    return arith_calc("=");
                 case "root":
-                    Math.sqrt(n);
-                    System.out.println("enter function:");
-                    return arith_calc(sc.next());
+                    result = Math.sqrt(result);
+                    return arith_calc("=");
                 default:
                     System.out.println("error: unknown operator used.");
                     return 0;
@@ -63,7 +63,7 @@ public class calculator
         System.out.println("Welcome ! this is a demo calculator.");
         
         result = first();
-        System.out.println("enter function:");
+        System.out.println("enter from within these functions: *,/,-,+,%,^,root");
         String s = sc.next();
         System.out.println(arith_calc(s));
         }
